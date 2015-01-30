@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>
-    @yield('title')
+    HTML Rul3z D00d - @yield('title')
     </title>
     <link rel="stylesheet" href="/css/basic.css" type="text/css" />
 </head>
@@ -11,8 +11,9 @@
 <div id="nav">
     <ul>
         <li><a href="/">Home</a></li>
-        
-        @yield('navigation')
+        <!--Logic for if a user is signed in will be put here-->
+        <li><a href="/login">Log-In</a></li>
+        <li><a href="/sessions/create">Create Account</a></li>
     </ul>
 </div>
 
