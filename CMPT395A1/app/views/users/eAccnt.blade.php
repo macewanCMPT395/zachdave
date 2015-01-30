@@ -1,18 +1,13 @@
 @extends('layouts.default')
 
 @section('title')
-    Create Account
+    Edit Account Info
 @stop
 
 @section('content')
-    <h1>Create Account</h1>
+    <h1>Edit Account Info</h1>
     
     {{ Form::open() }}
-    
-        <div>
-            {{ Form::label('username', 'Username:') }}
-            {{ Form::uname('username') }}
-        </div>
     
         <div>
             {{ Form::label('email', 'Email:') }}
@@ -35,7 +30,7 @@
         </div>
         
         <div>
-            {{ Form::submit() }}
+            {{ Form::submit('Save') }}
         </div>
         
     {{ Form::close() }}
