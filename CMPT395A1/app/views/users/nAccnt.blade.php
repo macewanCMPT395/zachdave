@@ -1,13 +1,18 @@
 @extends('layouts.default')
 
 @section('title')
-    Log-In
+    Create Account
 @stop
 
 @section('content')
-    <h1>Log-In</h1>
+    <h1>Create Account</h1>
     
-    {{ Form::open([]) }}
+    {{ Form::open() }}
+    
+        <div>
+            {{ Form::label('username', 'Username:') }}
+            {{ Form::uname('username') }}
+        </div>
     
         <div>
             {{ Form::label('email', 'Email:') }}
@@ -18,8 +23,6 @@
             {{ Form::label('password', 'Password:') }}
             {{ Form::password('password') }}
         </div>
-        
-        <div>{{ Form::submit('Log-In') }}</div>
         
     {{ Form::close() }}
 @stop

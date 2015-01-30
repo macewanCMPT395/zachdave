@@ -12,6 +12,7 @@
 */
 Route::get('/', 'PagesController@home');
 Route::get('/sessions/create', 'SessionsController@create');
+Route::get('/users/nAccnt', 'UsersController@nAccnt');
 
 
 Route::resource('sessions', 'SessionsController');
