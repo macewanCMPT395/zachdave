@@ -1,20 +1,42 @@
 @extends('layouts.default')
 
+@section('title')
+    Create Account
+@stop
+
 @section('content')
-    <h1>Create New User </h1>
-    {{ Form::open(['route' => 'users.store']) }}
+    <h1>Create Account</h1>
+    
+    {{ Form::open() }}
+    
         <div>
-             {{ Form::label('username', 'Username: ') }}
-             {{ Form::text('username') }}
-             {{ $errors->first('username') }}
-         </div>
-         
-         <div>
-             {{ Form::label('password', 'Password: ') }}
-             {{ Form::password('password') }}
-             {{ $errors->first('password') }}
-         </div>
-         
-         <div>{{ Form::submit('Create User') }}</div>
+            {{ Form::label('username', 'Username:') }}
+            {{ Form::uname('username') }}
+        </div>
+    
+        <div>
+            {{ Form::label('email', 'Email:') }}
+            {{ Form::email('email') }}
+        </div>
+    
+        <div>
+            {{ Form::label('password', 'Password:') }}
+            {{ Form::password('password') }}
+        </div>
+        
+        <div>
+            {{ Form::label('phone', 'Phone #:') }}
+            {{ Form::phone('phone') }}
+        </div>
+        
+        <div>
+            {{ Form::label('name', 'Real Name:') }}
+            {{ Form::name('name') }}
+        </div>
+        
+        <div>
+            {{ Form::submit() }}
+        </div>
+        
     {{ Form::close() }}
 @stop
