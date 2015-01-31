@@ -10,10 +10,15 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+
+#Route::get('users', 'UsersController@index');
+#Route::get('users/{username}', 'UsersController@show');
+
 Route::get('/', 'PagesController@home');
-Route::get('/sessions/create', 'SessionsController@create');
-Route::get('/users/nAccnt', 'UsersController@nAccnt');
+#Route::get('/sessions/create', 'SessionsController@create');
+#Route::get('/users/nAccnt', 'UsersController@nAccnt');
 
+Route::resource('users', 'UsersController');
 
-Route::resource('sessions', 'SessionsController');
+#Route::resource('sessions', 'SessionsController');
 
