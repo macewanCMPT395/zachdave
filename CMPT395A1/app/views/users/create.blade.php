@@ -11,7 +11,7 @@
     
         <div>
             {{ Form::label('username', 'Username:') }}
-            {{ Form::uname('username') }}
+            {{ Form::text('username') }}
         </div>
     
         <div>
@@ -26,12 +26,12 @@
         
         <div>
             {{ Form::label('phone', 'Phone #:') }}
-            {{ Form::phone('phone') }}
+            {{ Form::text('phone') }}
         </div>
         
         <div>
             {{ Form::label('name', 'Real Name:') }}
-            {{ Form::name('name') }}
+            {{ Form::text('name') }}
         </div>
         
         <div>

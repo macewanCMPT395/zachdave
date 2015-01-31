@@ -17,8 +17,6 @@ class UsersController extends BaseController {
         
         return View::make('users.index', ['users' => $users]);
     }
-
-   
    
     public function show($username) {
         $user = $this->user->whereUsername($username)->first(); //grab the first username that matches USERNAME
