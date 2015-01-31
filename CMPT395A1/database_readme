@@ -1,6 +1,12 @@
 To start up mysql type: mysql -u root -p
 type in the password for root 
  
+Create a database:
+CREATE DATABASE <database name>
+
+To select the database:
+USE <database name>
+
 To create the table users, which is used in our website:
 CREATE TABLE users (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, username VARCHAR(50) NOT NULL, email VARCHAR(50) NOT NULL, password VARCHAR(50) NOT NULL, phone VARCHAR(50), name VARCHAR(50));
 

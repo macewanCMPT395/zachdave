@@ -31,7 +31,7 @@ class UsersController extends BaseController {
     
     
     public function store() {
-    
+        
         $input = Input::all();
         
         if (!$this->user->fill($input)->isValid()) {
@@ -41,6 +41,6 @@ class UsersController extends BaseController {
         $this->user->save();
         
         return Redirect::route('users.index');
+        
     }
-    
 }

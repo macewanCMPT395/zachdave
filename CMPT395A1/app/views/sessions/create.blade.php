@@ -7,7 +7,7 @@
 @section('content')
     <h1>Log-In</h1>
     
-    {{ Form::open([]) }}
+    {{ Form::open(['route' => 'sessions.store']) }}
     
         <div>
             {{ Form::label('email', 'Email:') }}

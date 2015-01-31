@@ -13,7 +13,8 @@
 
 
 Route::get('/', 'PagesController@home');
-Route::get('/sessions/create', 'SessionsController@create');
+Route::get('login', 'SessionsController@create');
+Route::get('logout', 'SessionsController@destroy');
 
 Route::resource('users', 'UsersController');
 
